@@ -1,5 +1,5 @@
 from tkinter import *
-from tkfiledialog import *
+from tkinter.filedialog import *
 
 filename = None
 
@@ -29,7 +29,7 @@ def openFile():
 	text.delete(0.0, END)
 	text.insert(0.0, t)
 
-root = tk()
+root = Tk()
 root.title("My Python Text Editor")
 root.minsize(width = 400, height = 400)
 root.maxsize(width = 400, height = 400)
@@ -43,7 +43,7 @@ filemenu.add_command(label = "New", command = newFile)
 filemenu.add_command(label = "Open", command = openFile)
 filemenu.add_command(label = "Save", command = saveFile)
 filemenu.add_command(label = "Save As...", command = saveAs)
-filemenu.add_seperator()
+filemenu.add_separator()
 filemenu.add_command(label = "Quit", command = root.quit)
 menubar.add_cascade(label = "File", menu = filemenu)
 
