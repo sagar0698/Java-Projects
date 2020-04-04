@@ -3,12 +3,12 @@
 operations = [ "Pressure" , "Force" , "Speed" , "Velocity" , "Accelaration" , "Momentum" ]
 
 
-def preassure():
+def pressure():
     print(" ")
     force = int(input("Enter force : "))
     print(" ")
     area = int(input("Enter area : "))
-    preassure = force / area
+    pressure = force / area
     print(" ")
     print("Pressure is " + str(pressure) + "pascal")
 
